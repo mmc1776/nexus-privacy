@@ -13,43 +13,78 @@ h1{font-size:1.8em;margin-bottom:.2em}h2{font-size:1.2em;margin-top:1.8em}
 </head>
 <body>
 <h1>Nexus: Fall of Man - Privacy Policy</h1>
-<p class="date">Last updated: November 23, 2026</p>
-<p>This policy covers the Nexus: Fall of Man app for iPhone and iPad (App Store) and for Android phones and tablets (Google Play) (together, the "App"), published by MMC.</p>
+<p class="date">Last updated: November 26, 2026</p>
+<p>This policy covers the Nexus: Fall of Man app for iPhone and iPad (App Store), for Android phones and tablets (Google Play) and for PC (Steam) (together, the "App"), published by MMC (Marino Matthew Chesmore) ("we", "us").</p>
 <h2>The short version</h2>
-<p>The App has online multiplayer. To make it work, the App connects to Epic Online Services (EOS), a service run by Epic Games that we use for player sign-in, lobbies and match connections. EOS receives an anonymous device identifier and your connection details (such as your IP address). We do not ask for your name, email or any account, we do not run our own servers that store your data, and we never sell or share your data for advertising. Your progress and settings stay on your device.</p>
-<h2>What the App stores, and where</h2>
+<p>Single-player modes never ask you to sign in. Online multiplayer needs you to sign in (with Steam on PC, Apple on iPhone and iPad, Google on Android) and uses two services: Epic Online Services (EOS), run by Epic Games, for lobbies and match connections, and Unity Gaming Services (UGS), run by Unity Technologies, for your online account, your display name, your friends list, blocking and reporting. We do not ask for your real name or email address, we do not run our own servers that store your data, and we never sell or share your data for advertising. Your progress and settings stay on your device.</p>
+<h2>What the App stores on your device</h2>
 <ul>
 <li><strong>Game progress and settings</strong> (unlocked talents, match history, options such as language and controls) are saved <strong>only on your device</strong>. We cannot see them. Deleting the App deletes them.</li>
-<li><strong>Replays</strong> of your matches are saved <strong>only on your device</strong>. A replay of an online match includes the names the other players chose in that match.</li>
-<li>The App does <strong>not</strong> ask for an account, your name, email, contacts, location, photos, camera, microphone or any other personal information.</li>
+<li><strong>Replays</strong> of your matches are saved <strong>only on your device</strong>. A replay of an online match includes the display names of the players in that match.</li>
+<li><strong>Recent players</strong> (the last players you shared a lobby or match with, so you can add them as friends) are saved <strong>only on your device</strong> and are never uploaded.</li>
+<li>The App does <strong>not</strong> ask for your contacts, location, photos, camera, microphone or any other personal information. Your friends list lives inside the App's online service; the App never reads your phone's address book.</li>
 </ul>
-<h2>Online multiplayer</h2>
-<p>Online play uses Epic Online Services (EOS), provided by Epic Games. When you start the App, it signs in to EOS anonymously so that multiplayer is ready when you want it. This is what is involved:</p>
+<h2>Your online account</h2>
+<p>The first time you open multiplayer, the App asks you to sign in. On PC this happens automatically with your Steam account. On iPhone and iPad you use Sign in with Apple; on Android you use Sign in with Google. Single-player modes never ask you to sign in.</p>
 <ul>
-<li><strong>An anonymous device identifier.</strong> EOS creates a device credential for this copy of the App and a random player ID linked to it. It is not linked to your name, email, phone number or any other account, and we do not use it to identify you as a person or to track you.</li>
+<li><strong>Steam:</strong> the App receives your Steam ID and a sign-in ticket from Steam and passes them to Epic and Unity to confirm who you are.</li>
+<li><strong>Apple:</strong> the App asks Apple for no name and no email address. Apple gives the App an identity token with an anonymous identifier for your Apple account, which the App passes to Epic and Unity to confirm the sign-in. The App does not store the token. If you later delete your online account, the App also revokes its Sign in with Apple access.</li>
+<li><strong>Google:</strong> Google gives the App an identity token for your Google account, which the App passes to Epic and Unity to confirm the sign-in. Google's token can also contain your Google account's email address and name. The App does not read or store them, but Epic and Unity receive the token to check it and may process its contents under their own privacy policies.</li>
+</ul>
+<h2>Online multiplayer: Unity Gaming Services</h2>
+<p>Unity Gaming Services, provided by Unity Technologies, runs your online account, display name and friends. Unity keeps the following for your account:</p>
+<ul>
+<li><strong>Your Unity player ID</strong>, a random ID created for your account, and the ID of the Steam, Apple or Google account you signed in with.</li>
+<li><strong>Your display name</strong> and the #tag of digits added to it. Other players see your display name in lobbies, matches, scoreboards, friends lists and their saved replays. The App checks names with a filter on your device, and our code running on Unity's Cloud Code service checks them again when the name is saved. Names are not sent to any other moderation service.</li>
+<li><strong>Your friends, friend requests and blocked players.</strong></li>
+<li><strong>Your online status ("presence")</strong>, shown to your friends only while you are online: whether you are online, in a lobby or in a match; when your lobby is open to them, its room code, how many seats are filled, the game mode and the game version; which platform you play on (PC, Android, iPhone/iPad); your EOS player ID; and on PC, your Steam ID. You can hide it with APPEAR OFFLINE. Unity does not keep your status after you go offline.</li>
+<li><strong>Invites</strong> you send to friends. An invite carries only a room code, a game mode and a game version; the App has no text or voice chat.</li>
+<li><strong>A few settings for your account</strong>, saved with Unity's Cloud Save: the version of the Online Rules you accepted, when you last changed your name, and blocked players beyond the service's own limit.</li>
+<li><strong>A player-verification record:</strong> your EOS player ID, saved with your Unity player ID in Cloud Save. Other players' copies of the App can read it, so the App can confirm who is really in a lobby (for example for Friends Only lobbies and blocks).</li>
+<li><strong>Connection logs.</strong> Unity's servers see your IP address when the App talks to them and keep it in their logs for about 30 days. Unity may use it to estimate your approximate region to run the service.</li>
+</ul>
+<p><strong>What Unity's software declares.</strong> Apps must list every kind of data their built-in software may collect. Unity's software in the App declares that it may process: user IDs, approximate location, email address, other contact information (the display name), customer-support data, other usage data, crash data and other user content. The App itself never asks for your email address and does not use Unity's own account, support or analytics features, so in practice Unity receives only what is described above. Because Unity declares these categories, the App Store privacy details and the Google Play data safety section list them all, for app functionality only - never for advertising or tracking.</p>
+<p>Unity processes this data on our behalf to provide the service, under the <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity privacy policy for game players</a> and Unity's data processing terms. We do not sell it or use it for advertising.</p>
+<h2>Online multiplayer: Epic Online Services</h2>
+<p>Lobbies and match connections use Epic Online Services (EOS), provided by Epic Games. This is what is involved:</p>
+<ul>
+<li><strong>Your EOS player ID.</strong> When you start the App, it may connect to EOS in the background so that multiplayer is ready when you want it. On phones and tablets EOS creates an anonymous device credential for this copy of the App; EOS gives you a random player ID and links it to the Steam, Apple or Google account you sign in with. We do not use the EOS player ID to identify you as a person or to track you.</li>
 <li><strong>Connection details.</strong> To host, find and join matches, your device exchanges network information (including your IP address) with Epic's servers. During a match, your game data travels to the other players either directly between devices or through Epic's relay servers, so the other players' devices may also see your IP address while you play together. Match data is used only to run the match.</li>
+<li><strong>What everyone in your lobby sees.</strong> Your display name, your Unity player ID (so they can add, block or report you), your EOS player ID, the number of the Career portrait you have equipped and, if you play on PC through Steam, your public Steam ID (so they can show your Steam avatar). If another player is on PC and signed in to Steam, the App receives their public Steam ID for the same purpose. The App does not store these except as the names saved in replays.</li>
 <li><strong>Lobby name.</strong> If you host a game, the lobby name you type is visible to other players while the lobby exists. Do not put personal information in it.</li>
-<li><strong>Player avatars.</strong> To show each player's avatar in the lobby and while connecting, the App shares the number of the Career portrait you have equipped with the other players in your lobby. If one of the other players is on the PC version and signed in to Steam, the App also receives that player's public Steam ID so it can show their Steam avatar. If you play the PC version through Steam, your public Steam ID is shared with the other players in your lobby, including players on phones, for the same purpose. It is not stored by the App and is not used for anything else.</li>
 </ul>
 <p>Epic processes this data to provide the service, under the <a href="https://www.epicgames.com/site/privacypolicy">Epic Games privacy policy</a>. We do not sell it or use it for advertising.</p>
+<h2>Blocking and reporting</h2>
+<p>You can block a player or report a player's display name. A <strong>block</strong> is saved with your account at Unity. A <strong>report</strong> sends us the reported player's Unity player ID and EOS player ID, the display name you saw, the reason you picked from a list, the time, and your own Unity player ID. There is no free text. We use reports only to enforce the <a href="terms.html">Online Rules</a> (for example by resetting a name or banning an account) and keep them for up to 90 days after we have acted on them. Reports are sent through our code on Unity's Cloud Code service and stored with Unity's Cloud Save; we review them every day and act within 24 hours.</p>
 <h2>What the App does not do</h2>
 <ul>
 <li>No analytics or tracking. The App contains no analytics, advertising or tracking code, and does not track you across other apps or websites.</li>
 <li>No advertising.</li>
 <li>No in-app purchases.</li>
+<li>No text or voice chat.</li>
 <li>Apart from the online play described above, no data is sent off your device by the App.</li>
 </ul>
 <h2>Apple and Google</h2>
 <p>You buy and download the App through the App Store or Google Play. Payment is handled entirely by Apple or Google under their own privacy policies; we never see your payment details.</p>
 <p><strong>iPhone and iPad:</strong> if you choose to share crash reports or app analytics with developers in your device settings, Apple may provide us with anonymous, aggregated crash and usage reports. This is controlled by you in iOS Settings &gt; Privacy &amp; Security &gt; Analytics &amp; Improvements, and is governed by Apple's privacy policy.</p>
 <p><strong>Android:</strong> if you have turned on usage and diagnostics sharing on your device, Google may provide us with anonymous, aggregated crash and performance reports through Google Play Console. This is controlled by you in your Android or Google account settings, and is governed by Google's privacy policy.</p>
+<p><strong>PC:</strong> you buy the App through Steam, under Valve's own privacy policy; we never see your payment details.</p>
+<h2>How long we keep data</h2>
+<ul>
+<li>Your online account (Unity player ID, display name, friends, requests, blocks, the Cloud Save settings above) and your EOS player ID: until you delete your online account.</li>
+<li>Your online status: only while you are online.</li>
+<li>Reports: up to 90 days after we have acted on them.</li>
+<li>Connection logs: about 30 days at Unity; Epic keeps its own logs under the Epic Games privacy policy.</li>
+</ul>
 <h2>Children</h2>
-<p>The App is rated for adults and is not directed at children. We do not knowingly collect personal information from children.</p>
+<p>The App is rated for adults and is not directed at children. Online play is for players 18 and older. We do not knowingly collect personal information from children; if you believe a child has created an online account, contact us and we will delete it.</p>
 <h2>Your choices and deleting your data</h2>
-<p>You can play every single-player mode without joining an online match. Deleting the App removes everything it stored on your device, including its EOS device credential; a new install gets a new, unrelated player ID. If you would like us to ask Epic to delete the data linked to your player ID, see <a href="delete.html">Delete your online data</a>.</p>
+<p>You can play every single-player mode without signing in. You can hide your online status from friends with APPEAR OFFLINE, change or remove your display name, and block any player. You can delete your online account at any time in <strong>OPTIONS &gt; GAMEPLAY &gt; DELETE ONLINE ACCOUNT</strong> on a phone or tablet (on PC: <strong>OPTIONS &gt; GAMEPLAY &gt; ONLINE NAME &gt; ACCOUNT &gt; DELETE ONLINE ACCOUNT</strong>): this deletes your display name, friends, friend requests, blocks and Cloud Save settings at Unity, your player-verification record, your Unity account and your EOS player ID and its sign-in link. On iPhone and iPad it also revokes the App's Sign in with Apple access. Deleting the App removes everything it stored on your device. To delete your online data without the App, see <a href="delete.html">Delete your online data</a>.</p>
+<p>Depending on where you live, you may have the right to ask for a copy of your data, to correct it, to object to its use or to have it deleted. To do so, contact us at mmcdev79509@gmail.com.</p>
 <h2>Changes</h2>
-<p>If a future version changes what data is sent off your device (for example signing in with an Apple, Google or Steam account), we will update this policy, the App Store privacy details and the Google Play data safety section before that version is released, and change the date above.</p>
+<p>When a version of the App changes what data is sent off your device, we update this policy, change the date above and update the App Store privacy details and the Google Play data safety section to match.</p>
 <h2>Contact</h2>
-<p>Questions about this policy: join our Discord at <a href="https://discord.gg/M73RJdwhx8">discord.gg/M73RJdwhx8</a>.</p>
+<p>Questions about this policy or your data: email mmcdev79509@gmail.com, or join our Discord at <a href="https://discord.gg/M73RJdwhx8">discord.gg/M73RJdwhx8</a>.</p>
+<p>See also the <a href="terms.html">Online Rules (Terms of Use)</a>.</p>
 </body>
 </html>
